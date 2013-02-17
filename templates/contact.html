@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 
+{% block nav %}
+  {% with contact_nav=True %}
+    {{ block.super }}
+  {% endwith %}
+{% endblock %}
+
 {% block content %}
-<h1>How to contact us</h1>
-<p>
-Email or call us!
-</p>
+  <h1>How to contact us</h1>
+  <p>
+  Email or call us!
+  </p>
 {% endblock content %}

@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 
+{% block nav %}
+  {% with about_nav=True %}
+    {{ block.super }}
+  {% endwith %}
+{% endblock %}
+
 {% block content %}
-<h1>About us</h1>
-<p>
-This is the about template.
-</p>
+  <h1>About us</h1>
+  <p>
+  This is the about template.
+  </p>
 {% endblock content %}
